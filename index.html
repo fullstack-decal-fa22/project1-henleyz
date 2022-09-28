@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="author" content="Henley Zhang">
+        <meta name="description" content="SPersonal Website">
+        <title>Henley Zhang</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <h1 id="top" >Hi, Im Henley Zhang</h1>
+
+        <div id="about">
+            <h3>I'm Henley, a 2nd year CS student studying at UCB. My areas of interest are game dev, and computer vison</h3>
+        <button><a href="https://github.com/henleyz/" target="_blank"><p>Open Github</p></a></button>
+        </div>
+
+
+        <div class="menu">
+            <h2>about</h2>
+            <h2>work</h2>
+            <h2>contact</h2>
+        </div>
+
+
+
+        <div id="work">
+            <h4>Work</h4>
+            <h5> Here are some of my projects and classes I'm taking</h5>
+            <div class="projects">
+                <div class="project">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+
+                <div class="project">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div class="project">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <h6> Here are some ways to contact me.</h6>
+            <ul class="contact__bar">
+                <li class="contact__items"><a href="https://github.com/henleyz"><img src="images/github.png" alt="github" height="65"></a></li>
+                <li class="contact__items"><a href="https://www.linkedin.com/in/henleyzhang/"><img src="images/linkedin.png" alt="github" height="70"></a></li>
+                <li class="contact__items"><a href="https://www.instagram.com/henley.zhang/"><img src="images/instagram-new.png" alt="github" height="70"></a></li>
+            </ul>
+        </div>
+
+        <form>
+            <label>Password:</label>
+            <input type="password" id="password">
+            <a href="#top"><button>Submit and go back to top</button></a>
+            <script>
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function(x){
+                x.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({behavior : 'smooth'});
+    });
+});
+            </script>
+        </form>
+        
+
+    </body>
+    
+</html>

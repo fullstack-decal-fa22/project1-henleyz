@@ -1,0 +1,96 @@
+* {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 300;
+}
+
+
+
+body{
+    margin: 100px;
+}
+h1{
+    margin-top: 20%;
+}
+
+
+button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+  }
+
+  button:hover {
+    background: white;
+    color: dodgerblue;
+  }
+
+.menu {
+    display: grid;
+    grid-template-rows: auto;
+    width: 50%;
+}
+
+
+.menu h2{
+    width: 50%;
+}
+
+
+.menu h2:hover{
+    color: dodgerblue;
+}
+
+.projects{
+    display: flex;
+
+}
+
+#work{
+    margin-bottom: 20%;
+    margin-top: 20%;
+}
+
+.project{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: lightgray;
+    justify-self: center;
+    padding-right: 100px;
+    margin-right: 100px;
+    justify-items: center;
+}
+h1{
+    font-size: 4rem;
+  font-weight: 500;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, dodgerblue 0%, white 190%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+h4{
+    font-size: 36px;
+}
+
+.contact__items{
+    display: flex;
+  }
+  
+.contact__items img{
+    opacity: 30%;
+    transition: opacity 0.5s;
+}
